@@ -48,6 +48,7 @@
 
     // edit note button login
     // to modularise later
+    // todo: to remove the 197 and somehow make the call with currentNoteId directly
     document.getElementById("edit-note").onclick = function () {
 		var link="{{ url_for('edit', note_id=197) }}".split('/edit')[0];
         location.href = link+'/edit/'+currentNoteId+"?enote_id="+currentNoteId;
